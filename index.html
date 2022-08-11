@@ -21,7 +21,7 @@
   <link rel="stylesheet" type="text/css" href="css/responsive.css">
 
 </head>
-<body class="dark">
+<body>
 
   <!-- preloader start -->
   <div class="preloader">
@@ -57,7 +57,7 @@
          <li><a href="#about" class="link-item outer-shadow hover-in-shadow">About</a></li>
          <li><a href="#services" class="link-item outer-shadow hover-in-shadow">Services</a></li>
          <li><a href="#projects" class="link-item outer-shadow hover-in-shadow">Projects</a></li>
-         <li><a href="#testimonial" class="link-item outer-shadow hover-in-shadow">testimonial</a></li>
+         <li><a href="#testimonial" class="link-item outer-shadow hover-in-shadow">Team Members</a></li>
          <li><a href="#contact" class="link-item outer-shadow hover-in-shadow">Contact</a></li>
       </ul>
     </div>
@@ -282,19 +282,24 @@
                   <div class="timeline-item">
                     <div class="timeline-item-inner outer-shadow">
                       <i class="fas fa-briefcase icon"></i>
-                      <span>sep, 2018 - present</span>
-                      <h3>full stack Developer</h3>
-                      <h4>Company name</h4>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Distinctio neque dolorem porro laboriosam facilis dolorum 
-                        aliquid repellat enim, inventore fugiat architecto et aspernatur 
-                        blanditiis nesciunt dolores ea debitis! Reiciendis,</p>
+                      <span>sep, 2021 - present</span>
+                      <h3>As A UI Designer And Developer, I Develop:-</h3>
+                      <h4>Web Application</h4>
+                      <p>
+                         1.	Master Food<br>
+                         2.	By the minute courier service system<br>
+                         3.	Online Computer Spare Parts Management System<br>
+                      </p>
+                      <h4>Mobile Application</h4>
+                      <p>
+                        1.	Mirissa Beach Resort Mobile Application<br>
+                      </p>
                     </div>
                   </div>
                   <!-- time item end -->
 
                    <!-- time item start -->
-                   <div class="timeline-item">
+                   <!-- <div class="timeline-item">
                     <div class="timeline-item-inner outer-shadow">
                       <i class="fas fa-briefcase icon"></i>
                       <span>sep, 2018 - present</span>
@@ -305,11 +310,11 @@
                         aliquid repellat enim, inventore fugiat architecto et aspernatur 
                         blanditiis nesciunt dolores ea debitis! Reiciendis,</p>
                     </div>
-                  </div>
+                  </div> -->
                   <!-- time item end -->
 
                   <!-- time item start -->
-                  <div class="timeline-item">
+                  <!-- <div class="timeline-item">
                     <div class="timeline-item-inner outer-shadow">
                       <i class="fas fa-briefcase icon"></i>
                       <span>sep, 2018 - present</span>
@@ -320,7 +325,7 @@
                         aliquid repellat enim, inventore fugiat architecto et aspernatur 
                         blanditiis nesciunt dolores ea debitis! Reiciendis,</p>
                     </div>
-                  </div>
+                  </div> -->
                   <!-- time item end -->
 
                 </div>
@@ -718,11 +723,10 @@
                 <div class="testi-item">
                   <i class="fas fa-quote-left left"></i>
                   <i class="fas fa-quote-right right"></i>
-                  <p>Lorem ipsum dolor sit amet consectetur 
-                    adipisicing elit. Nulla esse suscipit hic cum natus? 
+                  <p>Dilshan 
                   </p>
                   <img src="img/testimonial/1.png" alt="testimonial">
-                  <span>jayani chamali nawarathna</span>
+                  <span>Still updating</span>
                 </div>
                 <!-- testi item end -->
 
@@ -730,11 +734,10 @@
                 <div class="testi-item active">
                   <i class="fas fa-quote-left left"></i>
                   <i class="fas fa-quote-right right"></i>
-                  <p>Lorem ipsum dolor sit amet consectetur 
-                    adipisicing elit. Nulla esse suscipit hic cum natus? 
+                  <p>Kavindu Chethani
                   </p>
                   <img src="img/testimonial/1.png" alt="testimonial">
-                  <span>nawarathna</span>
+                  <span></span>
                 </div>
                 <!-- testi item end -->
 
@@ -742,11 +745,10 @@
                 <div class="testi-item">
                   <i class="fas fa-quote-left left"></i>
                   <i class="fas fa-quote-right right"></i>
-                  <p>Lorem ipsum dolor sit amet consectetur 
-                    adipisicing elit. Nulla esse suscipit hic cum natus? 
+                  <p>Still updating
                   </p>
                   <img src="img/testimonial/1.png" alt="testimonial">
-                  <span> chamali</span>
+                  <span>Still updating</span>
                 </div>
                 <!-- testi item end -->
 
@@ -805,29 +807,29 @@
         </div>
         <div class="row">
           <div class="contact-form">
-            <form>
+            <form onsubmit="sendEmail(); reset(); return false;">
               <div class="row">
                 <div class="w-50">
                   <div class="input-group outer-shadow hover-in-shadow">
-                    <input type="text" placeholder="Name" class="input-control">
+                    <input type="text" placeholder="Name" id="name" class="input-control" required>
                   </div>
                   <div class="input-group outer-shadow hover-in-shadow">
-                    <input type="text" placeholder="Email" class="input-control">
+                    <input type="email" placeholder="Email" id="email" class="input-control" required>
                   </div>
                   <div class="input-group outer-shadow hover-in-shadow">
-                    <input type="text" placeholder="Subject" class="input-control">
+                    <input type="text" placeholder="Subject" id="subject"  class="input-control" required>
                   </div>
                 </div>
                 <div class="w-50">
                   <div class="input-group outer-shadow hover-in-shadow">
-                    <textarea class="input-control"  placeholder="Message">
+                    <textarea class="input-control" id="message"  placeholder="Message">
                     </textarea>
                   </div>
                 </div>
               </div>
               <div class="row">
                 <div class="submit-btn">
-                  <button type="submit" class="btn-1 outer-shadow hover-in-shadow">Send Message</button>
+                  <button id="btn" type="submit" class="btn-1 outer-shadow hover-in-shadow">Send Message</button>
                 </div>
               </div>
 
@@ -923,6 +925,57 @@
 <script src="js/main.js"></script>
 <!-- style switcher js -->
 <script src="js/style-switcher.js"></script>
+
+
 </body>
+
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+
+<!-- <script>
+  var btn = document.getElementById('btn');
+  btn.addEventListener('click',function(e){
+          e.preventDefault()
+
+          var name = document.getElementById('name').value;
+          var email = document.getElementById('email').value;
+          var subject = document.getElementById('subject').value;
+          var message = document.getElementById('message').value;
+          var body = 'name:' +name+ '<br/> email:'+email+'<br/> subject'
+          +subject+'<br/> message' + message;
+
+
+
+
+              Email.send({
+              Host : "smtp.gmail.com",
+              Username : "novanawarathna@gmail.com",
+              Password : "wcyztcwrcicrtkqd",
+              To : 'novanawarathna@gmail.com',
+              From : email,
+              Subject : subject,
+              Body : body
+            }).then(
+              message => alert(message)
+          );
+  })
+</script> -->
+
+<script>
+  function sendEmail(){
+    Email.send({
+              Host : "smtp.gmail.com",
+              Username : "novanawarathna@gmail.com",
+              Password : "wcyztcwrcicrtkqd",
+              To : 'novanawarathna@gmail.com',
+              From : document.getElementById('email').value,
+              Subject : document.getElementById('subject').value,
+              Body : 'this is body'
+            }).then(
+              message => alert(message)
+          );
+  }
+</script>
+
 </html>
 
